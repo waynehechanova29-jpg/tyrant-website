@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TYRANT — Tyrant Ascenders</title>
+  <meta name="description" content="TYRANT (Tyrant Ascenders) — an elite Roblox gaming clan built on teamwork, progression, and competitive climbing. Rise Higher. Ascend Together.">
+  <meta property="og:title" content="TYRANT — Tyrant Ascenders">
+  <meta property="og:description" content="Rise Higher. Ascend Together. An elite Roblox gaming community.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⛰️</text></svg>">
+  <link rel="preconnect" href="https://thumbnails.roblox.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#home">Skip to content</a>
+
+  <header class="site-header" id="site-header">
+    <nav class="navbar" aria-label="Primary">
+      <a href="#home" class="nav-logo" aria-label="TYRANT home">
+        <svg class="logo-icon" viewBox="0 0 48 48" aria-hidden="true">
+          <path d="M4 38 L16 16 L22 26 L28 12 L44 38 Z" fill="url(#logoGrad)"/>
+          <defs>
+            <linearGradient id="logoGrad" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="var(--color-accent-secondary)"/>
+              <stop offset="100%" stop-color="var(--color-accent-primary)"/>
+            </linearGradient>
+          </defs>
+        </svg>
+        <span class="nav-wordmark">TYRANT</span>
+      </a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home" class="nav-link" data-section="home">Home</a></li>
+        <li><a href="#about" class="nav-link" data-section="about">About</a></li>
+        <li><a href="#members" class="nav-link" data-section="members">Members</a></li>
+        <li><a href="#staff" class="nav-link" data-section="staff">Staff</a></li>
+        <li><a href="#games" class="nav-link" data-section="games">Games</a></li>
+        <li><a href="#events" class="nav-link" data-section="events">Events</a></li>
+        <li><a href="#mount-lonely" class="nav-link" data-section="mount-lonely">Leaderboard</a></li>
+        <li><a href="#rules" class="nav-link" data-section="rules">Rules</a></li>
+        <li><a href="#discord" class="nav-link" data-section="discord">Discord</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+    <div class="mobile-menu" id="mobile-menu">
+      <a href="#home" class="mobile-link">Home</a>
+      <a href="#about" class="mobile-link">About</a>
+      <a href="#members" class="mobile-link">Members</a>
+      <a href="#staff" class="mobile-link">Staff</a>
+      <a href="#games" class="mobile-link">Games</a>
+      <a href="#events" class="mobile-link">Events</a>
+      <a href="#mount-lonely" class="mobile-link">Leaderboard</a>
+      <a href="#rules" class="mobile-link">Rules</a>
+      <a href="#discord" class="mobile-link">Discord</a>
+    </div>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="hero-backdrop" aria-hidden="true">
+        <svg class="hero-peaks" viewBox="0 0 1440 500" preserveAspectRatio="none">
+          <path class="peak peak-back" d="M0,500 L0,320 L220,120 L420,280 L620,60 L860,260 L1080,140 L1260,300 L1440,220 L1440,500 Z"/>
+          <path class="peak peak-mid" d="M0,500 L0,400 L180,220 L360,360 L560,180 L760,340 L980,200 L1200,360 L1440,280 L1440,500 Z"/>
+          <path class="peak peak-front" d="M0,500 L0,460 L240,340 L480,440 L740,300 L980,420 L1220,320 L1440,400 L1440,500 Z"/>
+        </svg>
+        <canvas id="particle-canvas" aria-hidden="true"></canvas>
+        <canvas id="dragon-canvas" aria-hidden="true"></canvas>
+        <div class="lightning-overlay" id="lightning-overlay" aria-hidden="true"></div>
+      </div>
+
+      <div class="hero-inner">
+        <div class="hero-content">
+          <p class="hero-eyebrow">A Roblox Gaming Clan</p>
+          <h1 class="hero-title">TYRANT</h1>
+          <p class="hero-subtitle">Tyrant Ascenders</p>
+          <p class="hero-tagline">Rise Higher. Ascend Together.</p>
+
+          <div class="hero-cta-group">
+            <a href="#recruitment" class="btn btn-primary">
+              <span class="btn-icon">⚔</span>Join TYRANT
+            </a>
+            <a href="#" id="hero-discord-btn" class="btn btn-discord" target="_blank" rel="noopener">
+              <svg class="discord-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994a.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03z" fill="currentColor"/></svg>
+              Join Discord
+            </a>
+            <a href="#about" class="btn btn-ghost">Explore</a>
+          </div>
+
+          <div class="hero-stats" id="hero-stats">
+            <div class="stat-item">
+              <span class="stat-number" data-target="0" id="stat-members">0</span>
+              <span class="stat-label">Members</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number" data-target="0" id="stat-staff">0</span>
+              <span class="stat-label">Staff</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number" data-target="0" id="stat-games">0</span>
+              <span class="stat-label">Games</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number" data-target="0" id="stat-events">0</span>
+              <span class="stat-label">Events</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-logo-wrap" aria-hidden="true">
+          <div class="hero-logo-rings">
+            <div class="ring ring-1"></div>
+            <div class="ring ring-2"></div>
+            <div class="ring ring-3"></div>
+          </div>
+          <div class="hero-logo-glow"></div>
+          <img src="logo.png" alt="" class="hero-logo-img">
+        </div>
+      </div>
+
+      <div class="scroll-indicator" aria-hidden="true"><span></span></div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="section-inner">
+        <h2 class="section-heading">About TYRANT</h2>
+        <p class="section-lede">
+          TYRANT is a Roblox gaming community built for players who want more than a casual server —
+          a clan that pushes together, competes together, and grows together. We are not limited to a
+          single game: TYRANT plays and supports a growing roster of Roblox titles, united by one standard
+          of teamwork and respect.
+        </p>
+        <div class="feature-grid" id="about-grid">
+          <article class="feature-card">
+            <div class="feature-icon" aria-hidden="true">🤝</div>
+            <h3>Teamwork</h3>
+            <p>Every summit, every match, every event — we move as one unit, not a collection of solo players.</p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-icon" aria-hidden="true">📈</div>
+            <h3>Progression</h3>
+            <p>Members are pushed to improve, with staff and veterans mentoring newer climbers along the way.</p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-icon" aria-hidden="true">🎮</div>
+            <h3>Competitive Gaming</h3>
+            <p>We take our games seriously, tracking performance and celebrating the players who lead the pack.</p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-icon" aria-hidden="true">🌐</div>
+            <h3>Community</h3>
+            <p>TYRANT is a place first, a game second — friendships and history matter more than any single title.</p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-icon" aria-hidden="true">🏆</div>
+            <h3>Events</h3>
+            <p>Regular clan events keep things active, from summit pushes to community-wide competitions.</p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-icon" aria-hidden="true">🛡️</div>
+            <h3>Respect</h3>
+            <p>Zero tolerance for harassment or drama. Every member is expected to treat others with respect.</p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-icon" aria-hidden="true">🧭</div>
+            <h3>Helping Members Improve</h3>
+            <p>Whether it's climbing technique or general skill, TYRANT invests in making its members better.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="announcements">
+      <div class="section-inner">
+        <h2 class="section-heading">Announcements</h2>
+        <div class="announcement-list" id="announcement-list"></div>
+      </div>
+    </section>
+
+    <section class="section" id="members">
+      <div class="section-inner">
+        <div class="section-header-row">
+          <h2 class="section-heading">Members</h2>
+          <span class="section-count" id="member-count-badge">0 Members</span>
+        </div>
+        <div class="filter-bar">
+          <input type="text" id="member-search" class="filter-input" placeholder="Search by username or display name…" aria-label="Search members">
+          <select id="member-role-filter" class="filter-select" aria-label="Filter by role"><option value="">All Roles</option></select>
+          <select id="member-country-filter" class="filter-select" aria-label="Filter by country"><option value="">All Countries</option></select>
+          <select id="member-sort" class="filter-select" aria-label="Sort members">
+            <option value="az">Sort: A–Z</option>
+            <option value="za">Sort: Z–A</option>
+            <option value="role">Sort: Role</option>
+          </select>
+        </div>
+        <div class="card-grid" id="member-grid"></div>
+        <p class="empty-state" id="member-empty" hidden>No members found.</p>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="staff">
+      <div class="section-inner">
+        <h2 class="section-heading">Staff</h2>
+        <p class="section-lede">The people who keep TYRANT running, in order of rank.</p>
+        <div class="staff-groups" id="staff-groups"></div>
+      </div>
+    </section>
+
+    <section class="section" id="games">
+      <div class="section-inner">
+        <h2 class="section-heading">Games We Play</h2>
+        <p class="section-lede">TYRANT isn't a one-game clan — here's where you'll find us.</p>
+        <div class="games-grid" id="games-grid"></div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="mount-lonely">
+      <div class="section-inner">
+        <h2 class="section-heading">Mount Lonely</h2>
+        <p class="section-lede">Our primary game and the birthplace of TYRANT's climbing culture. Progress is measured in summits — tracked and ranked across the whole clan.</p>
+        <h3 class="subheading">Summit Leaderboard</h3>
+        <div class="table-wrap">
+          <table class="leaderboard-table" id="leaderboard-table">
+            <thead>
+              <tr>
+                <th scope="col">Rank</th>
+                <th scope="col">Player</th>
+                <th scope="col">Summits</th>
+                <th scope="col">Status</th>
+              </tr>
+            </thead>
+            <tbody id="leaderboard-body"></tbody>
+          </table>
+        </div>
+        <p class="empty-state" id="leaderboard-empty" hidden>No leaderboard entries yet.</p>
+      </div>
+    </section>
+
+    <section class="section" id="events">
+      <div class="section-inner">
+        <h2 class="section-heading">Events</h2>
+        <div class="tabs" role="tablist" aria-label="Event filters">
+          <button class="tab-btn is-active" role="tab" aria-selected="true" data-tab="upcoming" id="tab-upcoming">Upcoming</button>
+          <button class="tab-btn" role="tab" aria-selected="false" data-tab="completed" id="tab-completed">Completed</button>
+        </div>
+        <div class="tab-panel" id="panel-upcoming" role="tabpanel" aria-labelledby="tab-upcoming">
+          <div class="events-grid" id="upcoming-events-grid"></div>
+          <p class="empty-state" id="upcoming-empty" hidden>No upcoming events scheduled.</p>
+        </div>
+        <div class="tab-panel" id="panel-completed" role="tabpanel" aria-labelledby="tab-completed" hidden>
+          <div class="events-grid" id="completed-events-grid"></div>
+          <p class="empty-state" id="completed-empty" hidden>No completed events yet.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="recruitment">
+      <div class="section-inner">
+        <h2 class="section-heading">Join TYRANT</h2>
+        <p class="section-lede">We're always looking for players who take the clan seriously — not perfect players, just committed ones.</p>
+        <div class="recruit-grid">
+          <div class="recruit-col">
+            <h3 class="subheading">Requirements</h3>
+            <ul class="check-list" id="requirements-list"></ul>
+          </div>
+          <div class="recruit-col">
+            <h3 class="subheading">Expectations</h3>
+            <ul class="check-list" id="expectations-list"></ul>
+          </div>
+        </div>
+        <div class="hero-cta-group recruit-cta">
+          <a href="#" id="recruit-discord-btn" class="btn btn-discord" target="_blank" rel="noopener">Join Our Discord</a>
+          <a href="#" id="recruit-roblox-btn" class="btn btn-primary" target="_blank" rel="noopener">Find Us on Roblox</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="rules">
+      <div class="section-inner">
+        <h2 class="section-heading">Clan Rules</h2>
+        <div class="rules-accordion" id="rules-accordion"></div>
+      </div>
+    </section>
+
+    <section class="section discord-section" id="discord">
+      <div class="section-inner discord-inner">
+        <h2 class="section-heading">Official Discord</h2>
+        <p class="discord-tag">Tag: <strong id="discord-tag">TYRN</strong></p>
+        <p class="section-lede">The Discord server is where TYRANT actually lives — event announcements, leaderboard updates, staff applications, and day-to-day conversation.</p>
+        <a href="#" id="discord-main-btn" class="btn btn-discord btn-large" target="_blank" rel="noopener">Join Our Discord</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="footer-wordmark">TYRANT</span>
+        <p class="footer-tagline">Rise Higher. Ascend Together.</p>
+      </div>
+      <nav class="footer-links" aria-label="Footer">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#members">Members</a>
+        <a href="#games">Games</a>
+        <a href="#events">Events</a>
+        <a href="#rules">Rules</a>
+        <a href="#discord" id="footer-discord-link">Discord</a>
+      </nav>
+      <p class="footer-copyright">© 2026 TYRANT — Tyrant Ascenders. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js?v=20260922-2"></script>
+</body>
+</html>
