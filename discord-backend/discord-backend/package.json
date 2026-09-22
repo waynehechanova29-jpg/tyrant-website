@@ -1,0 +1,19 @@
+{
+  "name": "tyrant-discord-member-api",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Private Discord bot and public member-count API for the TYRANT website.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "discord.js": "^14.16.3",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1"
+  }
+}
